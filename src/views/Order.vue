@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container py-5">
     <div class="row">
       <ol class="form-row text-center pl-0 d-flex" style="list-style: none;">
         <li class="col-md-4">
@@ -100,7 +100,7 @@
             ></textarea>
           </div>
           <div class="text-end">
-            <button type="submit" class="btn btn-danger">送出訂單</button>
+            <button type="submit" class="btn btn-secondary">送出訂單</button>
           </div>
         </Form>
       </div>

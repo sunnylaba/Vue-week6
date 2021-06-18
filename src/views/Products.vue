@@ -4,7 +4,7 @@
     <div class="row mt-5">
       <div class="col-md-6 col-lg-3 mb-3" v-for="item in products" :key="item.id">
         <div class="d-flex justify-content-center">
-          <div class="card" style="width: 18rem;">
+          <div class="card">
             <div class="image" @click="getProduct(item.id)">
               <img
                 :src="item.imageUrl"
@@ -20,12 +20,15 @@
             </div>
             <div class="card-body">
               <h3 class="card-title">{{ item.title }}</h3>
-              <del>原價 NTD{{ item.origin_price }}元</del>
-              <div class="h5">
-                現在只要 NTD<span style="color: red">{{ item.price }}</span
-                >元
+              <del>原價 NTD {{ item.origin_price }} 元</del>
+              <div>
+                現在只要 NTD <span class="h5"> {{ item.price }} </span> 元
               </div>
-              <button type="button" class="btn btn-primary" @click="addCart(item.id)">
+              <button
+                type="button"
+                class="btn btn-primary btn-dark shop-btn"
+                @click="addCart(item.id)"
+              >
                 <span class="h6">加入購物車</span>
               </button>
             </div>
@@ -71,6 +74,23 @@
   left: 50%;
   transform: translate(-50%, 50%);
   text-align: center;
+}
+
+.card {
+  width: 18rem;
+  height: 25rem;
+}
+
+.card-body {
+  text-align: center;
+  position: relative;
+}
+
+.shop-btn {
+  position: absolute;
+  bottom: 5%;
+  left: 0%;
+  width: 100%;
 }
 </style>
 <script>

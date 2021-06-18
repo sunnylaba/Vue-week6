@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
     <div class="container">
       <router-link class="navbar-brand" to="/">首頁</router-link>
       <button
@@ -31,10 +31,10 @@
   <div class="container pt-5">
     <router-view></router-view>
   </div>
-  <footer class="text-center fixed-bottom bg-light">
+  <footer class="text-center fixed-bottom bg-dark text-white">
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2021 Copyright: <span class="text-dark">僅個人作品練習，無商業用途</span>
+      © 2021 Copyright : 僅個人作品練習，無商業用途。
     </div>
     <!-- Copyright -->
   </footer>

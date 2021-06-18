@@ -23,7 +23,7 @@
   <h2 class="text-center mb-5">購物車列表</h2>
   <loading :active="isLoading"></loading>
   <div class="text-end">
-    <button class="btn btn-outline-danger" type="button" @click="delCart">清空購物車</button>
+    <button class="btn btn-outline-dark" type="button" @click="delCart">清空購物車</button>
   </div>
   <table class="table align-middle">
     <thead>
@@ -67,7 +67,7 @@
     </tfoot>
   </table>
   <div class="d-flex justify-content-end">
-    <button type="button" class="btn btn-primary" @click="toOder">確認訂購</button>
+    <button type="button" class="btn btn-secondary" @click="toOder">確認訂購</button>
   </div>
 </template>
 

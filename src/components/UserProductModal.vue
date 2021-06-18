@@ -28,11 +28,11 @@
             </div>
             <div class="col-sm-6">
               <span class="badge bg-primary rounded-pill">{{ modalProduct.category }}</span>
-              <p>商品描述：{{ modalProduct.description }}</p>
-              <p>商品內容：{{ modalProduct.content }}</p>
-              <del class="h6">原價 NTD{{ modalProduct.origin_price }} 元</del>
-              <div class="h5">
-                現在只要 NTD<span style="color: red">{{ modalProduct.price }}</span> 元
+              <p>商品描述：<br>{{ modalProduct.description }}</p>
+              <p>商品內容：<br>{{ modalProduct.content }}</p>
+              <del>原價 NTD {{ modalProduct.origin_price }} 元</del>
+              <div>
+                現在只要 NTD <span class="h5">{{ modalProduct.price }}</span> 元
               </div>
               <div>
                 <div class="input-group">

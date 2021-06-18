@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container py-5">
     <div class="row justify-content-center">
       <div class="col-md-6">
         <div class="alert alert-success rounded-pill text-center" role="alert">
